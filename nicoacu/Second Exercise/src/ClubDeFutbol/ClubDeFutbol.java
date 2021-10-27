@@ -15,7 +15,7 @@ public abstract class ClubDeFutbol {
     public String toString() {
         return "ClubDeFutbol{" +
                 "AmountOfTeams='" + AmountOfTeams + '\'' +
-                "name='" + name + '\'' +
+                ", name='" + name + '\'' +
                 ", league='" + getLeague() + '\'' +
                 ", country='" + getCountry() + '\'' +
                 ", age=" + getAge() +
