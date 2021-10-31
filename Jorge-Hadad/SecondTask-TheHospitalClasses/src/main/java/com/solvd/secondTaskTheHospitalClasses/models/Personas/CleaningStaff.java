@@ -1,4 +1,4 @@
-package Personas;
+package main.java.com.solvd.secondTaskTheHospitalClasses.models.Personas;
 
 public class CleaningStaff extends Employees {
 

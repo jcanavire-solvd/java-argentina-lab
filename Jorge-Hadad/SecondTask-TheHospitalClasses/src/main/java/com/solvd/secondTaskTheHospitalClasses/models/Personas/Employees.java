@@ -1,6 +1,6 @@
-package Personas;
+package main.java.com.solvd.secondTaskTheHospitalClasses.models.Personas;
 
-public class Employees {
+public abstract class Employees {
     private String name;
     private String lastName;
     private String dni;

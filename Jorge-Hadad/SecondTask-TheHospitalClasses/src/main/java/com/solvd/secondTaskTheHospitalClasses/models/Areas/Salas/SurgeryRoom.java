@@ -1,4 +1,4 @@
-package Areas.Salas;
+package main.java.com.solvd.secondTaskTheHospitalClasses.models.Areas.Salas;
 
 public class SurgeryRoom extends Room {
     
