@@ -1,8 +1,6 @@
 package main.java.com.solvd.secondTaskTheHospitalClasses.interfaces;
 
-public interface IAmbulance {
-
-    void transferPatient();
+public interface IPreparedForSurgery {
+    void prepareForSurgery();
 
 }
-

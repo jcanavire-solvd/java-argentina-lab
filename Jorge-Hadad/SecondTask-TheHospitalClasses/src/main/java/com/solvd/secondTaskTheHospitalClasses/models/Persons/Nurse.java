@@ -1,5 +1,7 @@
 package main.java.com.solvd.secondTaskTheHospitalClasses.models.Persons;
 
+import main.java.com.solvd.secondTaskTheHospitalClasses.enums.Gender;
+
 public class Nurse extends Employee {
     private String category;
     private float weeklyHours;

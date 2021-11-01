@@ -5,7 +5,7 @@ public class SecurityStaff extends Employee {
 
     public SecurityStaff(String name, String lastName, String dni, String address, String phone, String email, String position, 
     Double salary, String date, String password) {
-        super(name, lastName, dni, address, phone, email, position, salary, date, password);
+        super (name, lastName, dni, address);
     }
     
     public void checkIn(){

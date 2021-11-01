@@ -1,6 +1,6 @@
 package main.java.com.solvd.secondTaskTheHospitalClasses.models.Persons;
 
-import main.java.com.solvd.enums.Gender;
+import main.java.com.solvd.secondTaskTheHospitalClasses.enums.Gender;
 
 public abstract class Employee {
     protected String name;

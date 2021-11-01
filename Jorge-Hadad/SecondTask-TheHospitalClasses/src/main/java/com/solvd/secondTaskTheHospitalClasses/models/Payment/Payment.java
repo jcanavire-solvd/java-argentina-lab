@@ -1,5 +1,5 @@
-package main.java.com.solvd.secondTaskTheHospitalClasses.models.Pagos;
+package main.java.com.solvd.secondTaskTheHospitalClasses.models.Payment;
 
-public class LittlePayment {
+public class Payment {
     
 }

@@ -1,6 +1,6 @@
 package main.java.com.solvd.secondTaskTheHospitalClasses.models.Persons;
 
-import main.java.com.solvd.enums.Gender;
+import main.java.com.solvd.secondTaskTheHospitalClasses.enums.Gender;
 import main.java.com.solvd.secondTaskTheHospitalClasses.interfaces.IHospitalCare;
 import main.java.com.solvd.secondTaskTheHospitalClasses.interfaces.IMedicalHistorySheet;
 
