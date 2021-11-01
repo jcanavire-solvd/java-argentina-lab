@@ -3,16 +3,16 @@ package ClubDeFutbol;
 public class SanLorenzo extends ClubDeFutbol {
 
     public static void main(String[] args) {
-        SanLorenzo clubSanLorenzo = new SanLorenzo();
-        clubSanLorenzo.setLeague("Super Liga Argentina");
-        clubSanLorenzo.setCountry("Argentina");
-        clubSanLorenzo.setAge(113);
-        clubSanLorenzo.setHasArgentinianPlayers(true);
+        SanLorenzo teamSanLorenzo = new SanLorenzo();
+        teamSanLorenzo.setLeague("Super Liga Argentina");
+        teamSanLorenzo.setCountry("Argentina");
+        teamSanLorenzo.setAge(113);
+        teamSanLorenzo.setHasArgentinianPlayers(true);
         System.out.println("Details of this Club:");
-        System.out.println(clubSanLorenzo);
-        System.out.println("Can play a match?: " + clubSanLorenzo.canPlay());
+        System.out.println(teamSanLorenzo);
+        System.out.println("Can play a match?: " + teamSanLorenzo.canPlay());
 
-        // Creating another club to test hashCode and Equals
+        // Creating another team to test hashCode and Equals
         SanLorenzo otroSanLorenzo = new SanLorenzo(){
             public int hashCode() {
                 return (2021);
@@ -20,11 +20,11 @@ public class SanLorenzo extends ClubDeFutbol {
         };
 
         //Checking new hashCode
-        System.out.println("Original Hashcode for this club --> " + clubSanLorenzo.hashCode());
+        System.out.println("Original Hashcode for this team --> " + teamSanLorenzo.hashCode());
         System.out.println("Manually Changed Hashcode --> " + otroSanLorenzo.hashCode());
 
         //Testing overriden equals
-        System.out.println("Are both equals? Answer: " + clubSanLorenzo.equals(otroSanLorenzo));
+        System.out.println("Are both equals? Answer: " + teamSanLorenzo.equals(otroSanLorenzo));
     }
 
 

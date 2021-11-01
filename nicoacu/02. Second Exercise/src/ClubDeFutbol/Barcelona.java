@@ -3,24 +3,24 @@ package ClubDeFutbol;
 public class Barcelona extends ClubDeFutbol {
 
     public static void main(String[] args) {
-        Barcelona clubBarcelona = new Barcelona();
-        clubBarcelona.setLeague("LaLiga Santander");
-        clubBarcelona.setCountry("Spain");
-        clubBarcelona.setAge(121);
-        clubBarcelona.setHasArgentinianPlayers(true);
+        Barcelona teamBarcelona = new Barcelona();
+        teamBarcelona.setLeague("LaLiga Santander");
+        teamBarcelona.setCountry("Spain");
+        teamBarcelona.setAge(121);
+        teamBarcelona.setHasArgentinianPlayers(true);
         System.out.println("Details of this Club:");
-        System.out.println(clubBarcelona);
-        System.out.println("Can play a match?: " + clubBarcelona.canPlay());
+        System.out.println(teamBarcelona);
+        System.out.println("Can play a match?: " + teamBarcelona.canPlay());
 
-        // Creating another club to test hashCode and Equals
+        // Creating another team to test hashCode and Equals
         Barcelona otherBarcelona = new Barcelona(121) ;// Applying same age in both teams, as this is necessary for the hasCode
 
         //Checking new hashCode
-        System.out.println("Original Hashcode for this club --> " + clubBarcelona.hashCode());
+        System.out.println("Original Hashcode for this team --> " + teamBarcelona.hashCode());
         System.out.println("Manually Changed Hashcode --> " + otherBarcelona.hashCode()); // hashCode is age + length of characters of team's name. In this case, 121 + 9
 
         //Testing overriden equals
-        System.out.println("Are both equals? Answer: " + clubBarcelona.equals(otherBarcelona)); // Should be "true"
+        System.out.println("Are both equals? Answer: " + teamBarcelona.equals(otherBarcelona)); // Should be "true"
     }
 
     public Barcelona(int age){

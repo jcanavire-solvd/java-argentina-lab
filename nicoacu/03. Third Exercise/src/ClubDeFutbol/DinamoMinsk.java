@@ -3,16 +3,16 @@ package ClubDeFutbol;
 public class DinamoMinsk extends ClubDeFutbol {
 
     public static void main(String[] args) {
-        DinamoMinsk clubDinamoMinsk = new DinamoMinsk();
-        clubDinamoMinsk.setLeague("Vysheyshaya Liga");
-        clubDinamoMinsk.setCountry("Belarús");
-        clubDinamoMinsk.setAge(94);
-        clubDinamoMinsk.setHasArgentinianPlayers(true);
+        DinamoMinsk teamDinamoMinsk = new DinamoMinsk();
+        teamDinamoMinsk.setLeague("Vysheyshaya Liga");
+        teamDinamoMinsk.setCountry("Belarús");
+        teamDinamoMinsk.setAge(94);
+        teamDinamoMinsk.setHasArgentinianPlayers(true);
         System.out.println("Details of this Club:");
-        System.out.println(clubDinamoMinsk);
-        System.out.println("Can play a match?: " + clubDinamoMinsk.canPlay());
+        System.out.println(teamDinamoMinsk);
+        System.out.println("Can play a match?: " + teamDinamoMinsk.canPlay());
 
-        // Creating another club to test hashCode and Equals
+        // Creating another team to test hashCode and Equals
         DinamoMinsk otherDinamoMinsk = new DinamoMinsk(){
             public int hashCode() {
                 return (2021);
@@ -20,17 +20,17 @@ public class DinamoMinsk extends ClubDeFutbol {
         };
 
         //Checking new hashCode
-        System.out.println("Original Hashcode for this club --> " + clubDinamoMinsk.hashCode());
+        System.out.println("Original Hashcode for this team --> " + teamDinamoMinsk.hashCode());
         System.out.println("Manually Changed Hashcode --> " + otherDinamoMinsk.hashCode());
 
         //Testing overriden equals
-        System.out.println("Are both equals? Answer: " + clubDinamoMinsk.equals(otherDinamoMinsk));
+        System.out.println("Are both equals? Answer: " + teamDinamoMinsk.equals(otherDinamoMinsk));
     }
 
 
     @Override
     public boolean canPlay() {
-            return (this.country != null || this.age >= 0);
+            return (this.country != null && this.age >= 0);
     }
 
     @Override
