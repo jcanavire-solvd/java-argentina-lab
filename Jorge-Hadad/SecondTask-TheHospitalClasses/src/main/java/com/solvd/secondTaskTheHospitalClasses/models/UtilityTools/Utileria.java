@@ -1,4 +1,4 @@
-package main.java.com.solvd.secondTaskTheHospitalClasses.models.Utileria;
+package main.java.com.solvd.secondTaskTheHospitalClasses.models.UtilityTools;
 
 public class Utileria {
     private int numero;

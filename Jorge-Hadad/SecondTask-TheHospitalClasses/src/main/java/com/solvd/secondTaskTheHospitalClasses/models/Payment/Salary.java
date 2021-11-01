@@ -1,4 +1,4 @@
-package main.java.com.solvd.secondTaskTheHospitalClasses.models.Pagos;
+package main.java.com.solvd.secondTaskTheHospitalClasses.models.Payment;
 
 public class Salary {
     private int id;
