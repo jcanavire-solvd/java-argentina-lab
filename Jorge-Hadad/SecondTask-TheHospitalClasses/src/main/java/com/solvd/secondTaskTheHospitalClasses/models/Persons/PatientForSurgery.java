@@ -1,11 +1,10 @@
 package main.java.com.solvd.secondTaskTheHospitalClasses.models.Persons;
 
 import main.java.com.solvd.secondTaskTheHospitalClasses.enums.Gender;
-import main.java.com.solvd.secondTaskTheHospitalClasses.interfaces.IPreparedForSurgery;
 
 
 
-public class PatientForSurgery extends Patient implements IPreparedForSurgery {
+public class PatientForSurgery extends Patient {
     private String surgery;
 
     public PatientForSurgery(int patientId, String symptom,String name, 
@@ -19,10 +18,8 @@ public class PatientForSurgery extends Patient implements IPreparedForSurgery {
     }
 
     @Override
-    public void prepareForSurgery() {
-        System.out.println("Patient in bed is been prepared for surgery");
-        // TODO Auto-generated method stub
-        
+    public void getPreparedForASurgery() {
+        System.out.println("Patient for Surgery is been prepared for surgery");
     }
     
 }

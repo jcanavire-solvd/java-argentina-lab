@@ -1,8 +1,9 @@
 package main.java.com.solvd.secondTaskTheHospitalClasses.models.Persons;
 
 import main.java.com.solvd.secondTaskTheHospitalClasses.enums.Gender;
+import main.java.com.solvd.secondTaskTheHospitalClasses.interfaces.IGetPreparedForASurgery;
 
-public abstract class Patient {
+public abstract class Patient implements IGetPreparedForASurgery {
     protected String name;
     protected String lastName;
     protected int age;

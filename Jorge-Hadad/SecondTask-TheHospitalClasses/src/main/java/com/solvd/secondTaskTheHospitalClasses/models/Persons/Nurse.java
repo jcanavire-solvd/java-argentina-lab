@@ -1,8 +1,9 @@
 package main.java.com.solvd.secondTaskTheHospitalClasses.models.Persons;
 
 import main.java.com.solvd.secondTaskTheHospitalClasses.enums.Gender;
+import main.java.com.solvd.secondTaskTheHospitalClasses.interfaces.IPreparedForSurgery;
 
-public class Nurse extends Employee {
+public class Nurse extends Employee implements IPreparedForSurgery {
     private String category;
     private float weeklyHours;
 
@@ -28,6 +29,13 @@ public class Nurse extends Employee {
 
     public void setWeeklyHours( float weeklyHours ) {
         this.weeklyHours = weeklyHours;
+    }
+
+
+    @Override
+    public void prepareForSurgery() {
+        // TODO Auto-generated method stub
+        
     }
 
 }

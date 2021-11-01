@@ -18,5 +18,11 @@ public class PatientForConsulting extends Patient {
     public void setDiagnosis(String diagnosis) {
         this.diagnosis = diagnosis;
     }
+
+    @Override
+    public void getPreparedForASurgery() {
+        System.out.println("Patient for Consulting is prepared for surgery");
+        
+    }
     
 }
