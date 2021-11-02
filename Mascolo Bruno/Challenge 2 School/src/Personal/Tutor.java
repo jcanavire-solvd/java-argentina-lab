@@ -6,6 +6,11 @@ public class Tutor extends Person{
     private int idEmployee;
     private Course course;
 
+    @Override
+    public void talk() {
+
+    }
+
     public Tutor (){}
     public Tutor(int dni, String name, int age, int idEmployee, Course course) {
         super(dni, name, age);

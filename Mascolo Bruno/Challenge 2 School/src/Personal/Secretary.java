@@ -4,6 +4,11 @@ public class Secretary extends Person{
     private int idEmployee;
     private String area;
 
+    @Override
+    public void talk() {
+
+    }
+
     public Secretary (){}
 
     public Secretary(int dni, String name, int age, int idEmployee, String area) {

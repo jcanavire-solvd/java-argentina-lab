@@ -1,8 +1,12 @@
 package Personal;
 
-public class Accountant extends Person {
+import Interface.Pay;
+
+public class Accountant extends Person implements Pay {
     private int idEmployee;
     private String area;
+
+
 
     public Accountant() {    }
 
@@ -12,6 +16,10 @@ public class Accountant extends Person {
         this.area = area;
     }
 
+    @Override
+    public void Info() {
+        System.out.println("This is an accountant");
+    }
 
     public int getIdEmployee() {
         return idEmployee;
@@ -27,5 +35,20 @@ public class Accountant extends Person {
 
     public void setArea(String area) {
         this.area = area;
+    }
+
+    @Override
+    public void talk() {
+
+    }
+
+    @Override
+    public void moneyTransfer() {
+
+    }
+
+    @Override
+    public void calculateSalary() {
+
     }
 }
