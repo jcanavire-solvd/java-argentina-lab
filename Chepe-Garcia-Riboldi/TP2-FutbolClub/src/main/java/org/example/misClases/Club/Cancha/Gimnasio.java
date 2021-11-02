@@ -1,8 +1,8 @@
 package org.example.misClases.Club.Cancha;
 
 public class Gimnasio {
-    int amountOfDumbbell;
-    int amountOfGymMachines;
+    private int amountOfDumbbell;
+    private int amountOfGymMachines;
 
 
     public Gimnasio(int dumbbell, int gymmachines){
@@ -11,4 +11,19 @@ public class Gimnasio {
 
     }
 
+    public int getAmountOfDumbbell() {
+        return amountOfDumbbell;
+    }
+
+    public void setAmountOfDumbbell(int amountOfDumbbell) {
+        this.amountOfDumbbell = amountOfDumbbell;
+    }
+
+    public int getAmountOfGymMachines() {
+        return amountOfGymMachines;
+    }
+
+    public void setAmountOfGymMachines(int amountOfGymMachines) {
+        this.amountOfGymMachines = amountOfGymMachines;
+    }
 }
