@@ -6,14 +6,13 @@ public class Classroom {
 
     private int idClassroom;
     private Course course;
-    private int qChairs;
+    private final int qChairs = 50;
 
     public Classroom() {    }
 
-    public Classroom(int idClassroom, Course course, int qChairs) {
+    public Classroom(int idClassroom, Course course) {
         this.idClassroom = idClassroom;
         this.course = course;
-        this.qChairs = qChairs;
     }
 
     public int getIdClassroom() {
@@ -35,10 +34,4 @@ public class Classroom {
     public int getqChairs() {
         return qChairs;
     }
-
-    public void setqChairs(int qChairs) {
-        this.qChairs = qChairs;
-    }
-
-
 }

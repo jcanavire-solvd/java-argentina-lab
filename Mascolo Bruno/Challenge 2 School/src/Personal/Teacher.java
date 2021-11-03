@@ -1,10 +1,16 @@
 package Personal;
 
 import Course.Subject;
+import Interface.Teach;
 
-public class Teacher extends Person{
+public class Teacher extends Person implements Teach {
     private int idEmployee;
     private Subject subject;
+
+    @Override
+    public void talk() {
+
+    }
 
     public Teacher (){}
 
@@ -31,4 +37,18 @@ public class Teacher extends Person{
     }
 
 
+    @Override
+    public void writeBoard() {
+
+    }
+
+    @Override
+    public void lecture() {
+
+    }
+
+    @Override
+    public void answerQuestion() {
+
+    }
 }

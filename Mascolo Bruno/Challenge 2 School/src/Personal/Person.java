@@ -1,8 +1,10 @@
 package Personal;
 
+import Interface.Speak;
+
 import java.util.Objects;
 
-public abstract class Person {
+public abstract class Person implements Speak {
     private int dni;
     private String name;
     private int age;
@@ -13,6 +15,11 @@ public abstract class Person {
         this.dni = dni;
         this.name = name;
         this.age = age;
+    }
+
+    public void Info(){
+
+        System.out.println("This is a person");
     }
 
     public int getDni() {
@@ -52,4 +59,8 @@ public abstract class Person {
         return Objects.hash(getDni(), getName(), getAge());
     }
 
+    @Override
+    public void talk() {
+
+    }
 }

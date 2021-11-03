@@ -1,12 +1,18 @@
 package Personal;
 
 import Course.Course;
+import Interface.Study;
 
 import java.util.Objects;
 
-public class Student extends Person{
+public class Student extends Person implements Study {
     private int idStudent;
     private Course course;
+
+    @Override
+    public void talk() {
+
+    }
 
     public Student() {    }
 
@@ -44,5 +50,20 @@ public class Student extends Person{
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), getIdStudent(), getCourse());
+    }
+
+    @Override
+    public void read() {
+
+    }
+
+    @Override
+    public void highlight() {
+
+    }
+
+    @Override
+    public void Info() {
+        System.out.println("This is a Student");
     }
 }

@@ -5,6 +5,11 @@ public class Principal extends Person{
     private String hierarchy;
     private boolean highschool;
 
+    @Override
+    public void talk() {
+
+    }
+
     public Principal (){}
 
     public Principal(int dni, String name, int age, int idEmployee, String hierarchy, boolean highschool) {

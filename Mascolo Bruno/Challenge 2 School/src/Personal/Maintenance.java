@@ -1,6 +1,8 @@
 package Personal;
 
-public class Maintenance extends Person{
+import Interface.Clean;
+
+public class Maintenance extends Person implements Clean {
     private int idEmployee;
     private String specialty;
 
@@ -26,5 +28,20 @@ public class Maintenance extends Person{
 
     public void setSpecialty(String specialty) {
         this.specialty = specialty;
+    }
+
+    @Override
+    public void talk() {
+
+    }
+
+    @Override
+    public void swipe() {
+
+    }
+
+    @Override
+    public void mop() {
+
     }
 }
