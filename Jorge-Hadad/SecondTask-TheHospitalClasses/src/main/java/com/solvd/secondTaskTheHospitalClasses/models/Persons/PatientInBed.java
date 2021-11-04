@@ -64,5 +64,13 @@ public class PatientInBed extends Patient implements ICleaning {
         // TODO Auto-generated method stub
         
     }
+
+
+    @Override
+    public void getPreparedForASurgery() {
+        System.out.println("Patient in bed is getting prepared for a NEW surgery");
+        // TODO Auto-generated method stub
+        
+    }
     
 }
