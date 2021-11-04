@@ -51,7 +51,7 @@ public class Doctor extends Employee
         if(this.getSpecialty().equals("Surgeon"))
             System.out.println("Patient has been operated");
         else
-            throw new InvalidDoctorSpecialty("Doctor "+ this.getLastName() +" not surgeon");
+            throw new InvalidDoctorSpecialty("Doctor "+ this.getLastName() +" is not surgeon");
     }
 
 
