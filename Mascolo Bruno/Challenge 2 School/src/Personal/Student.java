@@ -1,8 +1,11 @@
 package Personal;
 
+import Area.School;
 import Course.Course;
 import Interface.Study;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Student extends Person implements Study {
@@ -66,4 +69,7 @@ public class Student extends Person implements Study {
     public void Info() {
         System.out.println("This is a Student");
     }
+
+
+
 }
