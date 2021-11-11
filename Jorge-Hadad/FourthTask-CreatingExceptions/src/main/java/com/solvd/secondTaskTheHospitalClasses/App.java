@@ -56,5 +56,75 @@ public class App {
             System.out.println(exception.getMessage());
         }
 
+        //create 5 collections of employees
+        Employee[] employees = new Employee[5];
+        employees[0] = empleado1;
+        employees[1] = empleado2;
+        employees[2] = doctor1;
+        employees[3] = doctor2;
+        employees[4] = doctor3;
+        System.out.println(employees);
+        
+        //create 5 collections of doctors
+        Doctor[] doctors = new Doctor[5];
+        doctors[0] = doctor1;
+        doctors[1] = doctor2;
+        doctors[2] = doctor3;
+        doctors[3] = doctor1;
+        doctors[4] = doctor2;
+        System.out.println("Doctors" + doctors);
+
+        //create 5 collections of nurses
+        Nurse[] nurses = new Nurse[5];
+        nurses[0] = nurse1;
+        nurses[1] = nurse1;
+        nurses[2] = nurse1;
+        nurses[3] = nurse1;
+        nurses[4] = nurse1;
+        System.out.println("Nurses" + nurses);
+
+        //create ArrayList of employees
+        java.util.ArrayList<Employee> employeeList = new java.util.ArrayList<>();
+        employeeList.add(empleado1);
+        employeeList.add(empleado2);
+        employeeList.add(doctor1);
+        employeeList.add(doctor2);
+        employeeList.add(doctor3);
+        System.out.println("Empleados" + employeeList);
+
+        //create ArrayList of doctors
+        java.util.ArrayList<Doctor> doctorList = new java.util.ArrayList<>();
+        doctorList.add(doctor1);
+        doctorList.add(doctor2);
+        doctorList.add(doctor3);
+        doctorList.add(doctor1);
+        doctorList.add(doctor2);
+        System.out.println(doctorList);
+
+        //create LinkedHashSet of Employees
+        java.util.LinkedHashSet<Employee> employeeLinkedHashSet = new java.util.LinkedHashSet<>();
+        employeeLinkedHashSet.add(empleado1);
+        employeeLinkedHashSet.add(empleado2);
+        employeeLinkedHashSet.add(doctor1);
+        employeeLinkedHashSet.add(doctor2);
+        employeeLinkedHashSet.add(doctor3);
+        System.out.println(employeeLinkedHashSet);
+
+
+        //create TreeSet of Employees
+        java.util.TreeSet<Employee> employeeTreeSet = new java.util.TreeSet<>();
+        employeeTreeSet.add(empleado1);
+        employeeTreeSet.add(empleado2);
+        employeeTreeSet.add(doctor1);
+        employeeTreeSet.add(doctor2);
+        employeeTreeSet.add(doctor3);
+        System.out.println(employeeTreeSet);
+
+
+
+        
+        
+
+
     }
 }
