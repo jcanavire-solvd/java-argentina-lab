@@ -1,9 +1,7 @@
 import Models.Area.BoardOfDirectors;
-import Models.Interfaces.Training;
 import Models.Staff.President;
 import Models.Staff.TechnicalDirector;
-import Models.Teams.Atlas;
-import Models.Interfaces.TransferMarket;
+import Models.Teams.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -32,9 +30,18 @@ public class Main {
         BoardOfDirectors boardOfDirectors = new BoardOfDirectors();
         boardOfDirectors.arrangeMatch( "Atlas", "Real Madrid");
         System.out.println("----------------------------------------");
+        boardOfDirectors.hirePlayers("Wanchope");
+        boardOfDirectors.hirePlayers("Tévez");
+        boardOfDirectors.sellPlayers("Wanchope");
+        boardOfDirectors.sellPlayers("Casillas");
+        System.out.println("----------------------------------------");
 
         technicalDirector.rallyPlayers("\"In football everything arranges itself. To me here is the better team, so leave everything on the field!\"");
 
+        //RealMadrid
+        RealMadrid teamRealMadrid = new RealMadrid(8);
 
+        //DinamoMinsk
+        DinamoMinsk teamDinamoMinsk = new DinamoMinsk(8);
     }
 }

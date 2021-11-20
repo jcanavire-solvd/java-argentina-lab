@@ -8,9 +8,8 @@ public interface StrategicDecision {
 
     }
 
-    default void sellPlayers(String playerName) throws InvalidPlayerNameException {
+    default void sellPlayers(String playerName) {
+
     }
-
-
 
 }
