@@ -42,11 +42,11 @@ public class President extends StaffMember implements TransferMarket, StrategicD
         this.budget = budget;
     }
 
-
+    @Override
     public void canBuyPlayers(int playerCost) throws InvalidBudgetException{
         budget = getBudget();
         if (budget <= 0) {
-            System.out.println("Exception: You can't operate with a budget of 0 or less than 0");
+            throw new InvalidBudgetException("Exception: You can't operate with a budget of 0 or less than 0");
         } else {
             System.out.println("----------------Football Transfer Market Report---------------");
             System.out.println("This team is looking to buy a player who cost: USD " + playerCost);

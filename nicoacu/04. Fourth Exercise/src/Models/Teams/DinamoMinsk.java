@@ -1,16 +1,16 @@
 package Models.Teams;
 
-public class Atlas extends FootballTeam {
+public class DinamoMinsk  extends FootballTeam {
     public int totalAmountPlayers;
 
 
 
-    public Atlas(int currentAmountPlayers) {
+    public DinamoMinsk(int currentAmountPlayers) {
         this.totalAmountPlayers = currentAmountPlayers;
-        this.league = "Primera C";
-        this.country = "Argentina";
-        this.age = 70;
-        this.setHasArgentinianPlayers(true);
+        this.league = "Vysheyshaya Liga";
+        this.country = "Belarús";
+        this.age = 94;
+        this.setHasArgentinianPlayers(false);
 
     }
 
@@ -24,7 +24,7 @@ public class Atlas extends FootballTeam {
 
     @Override
     public boolean canPlay() {
-            return (this.country != null && this.age >= 0 && totalAmountPlayers > 7);
+        return (this.country != null && this.age >= 0 && totalAmountPlayers > 7);
     }
 
 

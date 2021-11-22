@@ -1,9 +1,11 @@
 package Models.Staff;
 
+import Models.Exceptions.InvalidReviewException;
 import Models.Interfaces.ArrangeMatch;
+import Models.Interfaces.IncreaseMorale;
 import Models.Interfaces.Training;
 
-public class TechnicalDirector extends StaffMember implements Training, ArrangeMatch {
+public class TechnicalDirector extends StaffMember implements Training, ArrangeMatch, IncreaseMorale {
     private float salary;
 
     public TechnicalDirector(String name, String lastName, int age, int credential, float salary) {
@@ -19,6 +21,30 @@ public class TechnicalDirector extends StaffMember implements Training, ArrangeM
     public void setSalary(float salary) {
         this.salary = salary;
     }
+
+    @Override
+    public void startTraining() throws InterruptedException {
+        Training.super.startTraining();
+    }
+
+    @Override
+    public void rallyPlayers(String msg) throws InvalidReviewException {
+        if (msg.length() == 0){
+            throw new InvalidReviewException("Exception: Message can't be empty");
+        } else{
+            System.out.println("*Technical Director enters the locker rooms to say something:");
+            System.out.println("----------------------------------------");
+            System.out.println(msg);
+            if (msg.length() < 15){
+                System.out.println("*The message was too short. Players didn't feel more motivated after that.*");
+                System.out.println("----------------------------------------");
+            } else {
+                System.out.println("*Players are more motivated and will play better after your speech*");
+                System.out.println("----------------------------------------");
+            }
+        }
+    }
+
 
 
     @Override
