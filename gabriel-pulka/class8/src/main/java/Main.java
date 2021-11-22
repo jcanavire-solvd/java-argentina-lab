@@ -4,20 +4,20 @@ import java.util.function.*;
 public class Main {
 
     @FunctionalInterface
-    interface Rand{
-        public int getNumber(int x);
+    interface Rand <T extends Number>{
+        public T getNumber(T t);
     }
-    interface librarianCreator{
-        public Librarian create(String name, String lastName, Integer jobId, Integer idNumber, Integer cuilNumber);
+    interface librarianCreator<A extends String, B extends String, C extends Integer, D extends Integer, E extends Integer>{
+        public Librarian create(A a, B b, C c, D d, E e);
     }
-    interface addSecondLastName{
-        public String addLastName(String actualLastName, String newLastName);
+    interface addSecondLastName<T extends String, U extends String>{
+        public String addLastName(T t, U u);
     }
 
     public static void main(String args[]) throws IdBookException, BookNameException {
 
-        Rand random = x -> new Random().nextInt(x);
-        librarianCreator creator = (name, lastName, jobId, idNumber, cuilNumber) -> new Librarian(name, lastName, jobId, idNumber, cuilNumber);
+        Rand random = x -> new Random().nextInt((int) x);
+        librarianCreator creator = (name, lastName, jobId, idNumber, cuilNumber) -> new Librarian( name, lastName, jobId, idNumber, cuilNumber);
         addSecondLastName change = (a, b) -> a + " " + b;
 
 

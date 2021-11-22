@@ -1,6 +1,10 @@
 public class Cook extends Staff {
 
 
+    public void prepareFood(KitchenMenu kitchenMenu){
+        System.out.println("Today: " + kitchenMenu.name() + ". Will be ready in " + kitchenMenu.getMinutes() + " minutes");
+    }
+
     public Cook(String Name, String lastName, Integer jobId, Integer idNumber, Integer cuilNumber) {
         super(Name, lastName, jobId, idNumber, cuilNumber);
     }
@@ -8,10 +12,6 @@ public class Cook extends Staff {
     @Override
     public void work(String work) {
         System.out.println(work);
-    }
-
-    public void prepareFood(KitchenMenu kitchenMenu){
-        System.out.println("Today: " + kitchenMenu.name() + ". Will be ready in " + kitchenMenu.getMinutes() + " minutes");
     }
 
     @Override
