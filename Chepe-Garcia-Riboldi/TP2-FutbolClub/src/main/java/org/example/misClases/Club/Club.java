@@ -2,16 +2,18 @@ package org.example.misClases.Club;
 
 import org.example.misClases.Humano.Jugador;
 
+import java.util.ArrayList;
+
 public abstract class Club {
     protected int yearOfAntiquity;
     protected int numberOfTrophys;
     protected int levelOfTeam;
-    protected Jugador[] equipo;
+    protected ArrayList<Jugador> equipo;
     protected String nombreDeClub;
 
 
 
-    public Club(int antiquity, int trophys, int levelOfTeam, Jugador[] arrjug, String nomclub){
+    public Club(int antiquity, int trophys, int levelOfTeam, ArrayList<Jugador> arrjug, String nomclub){
         this.levelOfTeam=levelOfTeam;
         this.yearOfAntiquity=antiquity;
         this.numberOfTrophys=trophys;
@@ -49,11 +51,11 @@ public abstract class Club {
         this.levelOfTeam = levelOfTeam;
     }
 
-    public Jugador[] getEquipo() {
+    public ArrayList<Jugador> getEquipo() {
         return equipo;
     }
 
-    public void setEquipo(Jugador[] equipo) {
+    public void setEquipo(ArrayList<Jugador> equipo) {
         this.equipo = equipo;
     }
 
