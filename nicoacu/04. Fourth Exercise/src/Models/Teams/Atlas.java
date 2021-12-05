@@ -1,8 +1,5 @@
 package Models.Teams;
 
-import java.util.ArrayList;
-import Models.Staff.Players;
-
 public class Atlas extends FootballTeam {
     public int totalAmountPlayers;
 
