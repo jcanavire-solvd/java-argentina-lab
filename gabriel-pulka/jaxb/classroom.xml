@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<classroom idClassRoom="1" description="Music Classroom">
+    <students idStudent="1" name="Charles" lastName="Johnson">
+        <birthDate>02/11/1992</birthDate>
+    </students>
+    <students idStudent="2" name="Homero" lastName="Simpson">
+        <birthDate>10/05/1981</birthDate>
+    </students>
+</classroom>
